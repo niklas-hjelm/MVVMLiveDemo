@@ -1,0 +1,17 @@
+﻿<Window
+    x:Class="MVVMLiveDemo.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:MVVMLiveDemo"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:views="clr-namespace:MVVMLiveDemo.Views"
+    Title="MainWindow"
+    Width="800"
+    Height="450"
+    mc:Ignorable="d">
+    <Grid>
+        <!--  Sätter DataContext på DemoView tiil en Bidning till propertyn CurrentViewModel i MainViewModel  -->
+        <views:DemoView DataContext="{Binding CurrentViewModel}" />
+    </Grid>
+</Window>
